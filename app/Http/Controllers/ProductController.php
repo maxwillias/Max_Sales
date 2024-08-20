@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreVendaRequest;
-use App\Http\Requests\UpdateVendaRequest;
-use App\Models\Venda;
+use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
+use App\Models\Product;
 
-class VendaController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class VendaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreVendaRequest $request)
+    public function store(StoreProductRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class VendaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Venda $venda)
+    public function show(Product $product)
     {
         //
     }
@@ -43,7 +43,7 @@ class VendaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Venda $venda)
+    public function edit(Product $product)
     {
         //
     }
@@ -51,7 +51,7 @@ class VendaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateVendaRequest $request, Venda $venda)
+    public function update(UpdateProductRequest $request, Product $product)
     {
         //
     }
@@ -59,7 +59,7 @@ class VendaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Venda $venda)
+    public function destroy(Product $product)
     {
         //
     }

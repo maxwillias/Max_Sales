@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreCategoriaRequest;
-use App\Http\Requests\UpdateCategoriaRequest;
-use App\Models\Categoria;
+use App\Http\Requests\StoreSaleRequest;
+use App\Http\Requests\UpdateSaleRequest;
+use App\Models\Sale;
 
-class CategoriaController extends Controller
+class SaleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class CategoriaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCategoriaRequest $request)
+    public function store(StoreSaleRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class CategoriaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Categoria $categoria)
+    public function show(Sale $sale)
     {
         //
     }
@@ -43,7 +43,7 @@ class CategoriaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Categoria $categoria)
+    public function edit(Sale $sale)
     {
         //
     }
@@ -51,7 +51,7 @@ class CategoriaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCategoriaRequest $request, Categoria $categoria)
+    public function update(UpdateSaleRequest $request, Sale $sale)
     {
         //
     }
@@ -59,7 +59,7 @@ class CategoriaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Categoria $categoria)
+    public function destroy(Sale $sale)
     {
         //
     }

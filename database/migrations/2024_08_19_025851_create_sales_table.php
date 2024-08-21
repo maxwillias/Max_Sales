@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
+            $table->json('products');
+            $table->integer('total_products');
+            $table->decimal('total_price', 10, 2);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

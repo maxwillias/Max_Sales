@@ -17,27 +17,9 @@ class SaleFactory extends Factory
      */
     public function definition(): array
     {
-        $products = Product::factory(5)->create();
-
-        $productsArray = [];
-        $totalProducts = 0;
-        $totalPrice = 0;
-
-        foreach($products as $product){
-            $quantityProducts = fake()->randomNumber(1);
-            $productsArray = [
-                'quantity' => $quantityProducts,
-                'product' => $product->name,
-            ];
-
-            $totalProducts += $quantityProducts;
-            $totalPrice += $quantityProducts * $product->price;
-        }
-
         return [
-            'products' => json_encode($productsArray),
-            'total_products' => $totalProducts,
-            'total_price' => $totalPrice
+            'total_products' => fake()->randomNumber(2),
+            'total_price' => fake()->randomFloat(2, 100, 1000),
         ];
     }
 }

@@ -12,13 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('sales_has_products', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('sale_id');
-            $table->foreign('sale_id')->references('id')->on('sales');
-            $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreignId('sale_id')->constrained();
+            $table->foreignId('product_id')->constrained();
             $table->integer('quantity_products');
-            $table->timestamps();
             $table->softDeletes();
         });
     }

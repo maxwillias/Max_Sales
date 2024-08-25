@@ -13,7 +13,7 @@ class SaleController extends Controller
      */
     public function index()
     {
-        //
+        return view('sale.index', ['items' => Sale::all()]);
     }
 
     /**
@@ -21,7 +21,7 @@ class SaleController extends Controller
      */
     public function create()
     {
-        //
+        return view('sale.new');
     }
 
     /**

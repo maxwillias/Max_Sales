@@ -3,7 +3,7 @@
 @section('content')
     @include('alerts._alerts')
 
-    <a href={{ route('sales.create') }} class="btn btn-success mb-2"><i class="bi bi-plus-lg"></i> Adicionar novo</a>
+    <a href={{ route('sales.create') }} class="btn btn-success mb-2"><i class="bi bi-plus-lg"></i> Nova venda</a>
     <div>
         <table class="table">
             <thead>

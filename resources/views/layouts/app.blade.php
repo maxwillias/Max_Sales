@@ -24,9 +24,6 @@
 						<li class="nav-item">
 							<a class="nav-link" href="{{ route('sales.index') }}">Vendas</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Listagem (Abates)</a>
-						</li>
 					</ul>
 				</div>
 			</div>

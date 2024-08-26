@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreSaleRequest;
 use App\Http\Requests\UpdateSaleRequest;
+use App\Models\Product;
 use App\Models\Sale;
 
 class SaleController extends Controller
@@ -21,7 +22,7 @@ class SaleController extends Controller
      */
     public function create()
     {
-        return view('sale.new');
+        return view('sale.new', [ 'products' => Product::all()->sortBy('name')]);
     }
 
     /**

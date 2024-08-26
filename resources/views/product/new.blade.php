@@ -22,7 +22,7 @@
                     <option value="{{ $category->code }}">{{ $category->name }}</option>
                 @endforeach
             </select>
-            <label for="floatingSelect">Categoria</label>
+            <label>Categoria</label>
         </div>
         <div class="mb-3">
             <label class="form-label">Foto</label>
